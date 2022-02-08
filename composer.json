@@ -1,0 +1,20 @@
+{
+    "name": "ocorvu/estoque",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "ocorvu\\Estoque\\": "SRC/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ocorvu",
+            "email": "professorjoaodamata@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-pdo_pgsql": "*",
+        "ext-pdo": "*"
+    }
+
+}

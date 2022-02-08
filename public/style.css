@@ -1,0 +1,228 @@
+@charset "UTF8";
+
+:root{
+    --th: #45FF57;
+    --tr1:#91ff9c9c;
+    --tr2:#DAE5F7;
+    --bgFooterHeader: #B1CAF7;
+    --btnColor1: #127c6a;
+    --btnColor2: #127c6aa1;
+    --dangerColor1: #F00;
+    --dangerColor2: rgba(192, 5, 5, 0.726);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    list-style-type: none;
+    color: #000;
+
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    box-shadow: 1px 2px 5px #000;
+    border: 2px #000 solid;
+    background-color: rgba(0, 0, 0, 0.424);
+}
+
+header {
+    background-color: var(--bgFooterHeader);
+}
+.title {
+    font-size: 2.5em;
+}
+a:hover {
+    text-decoration: underline;
+}
+nav {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.39);
+    background-color: var(--bgFooterHeader);
+    font-size: 1.2em;
+}
+
+main {
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+section > p {
+    font-size: 1.2em;
+}
+
+input {
+    display: block;
+    padding: 5px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.link {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn {
+    display: block;
+    width: 20%;
+    padding: 5px;
+    font-weight: bold;
+    background-image: linear-gradient(var(--btnColor1), var(--btnColor2));
+    border-radius: 5px;
+    border-style: none;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background-image: linear-gradient(var(--btnColor2), var(--btnColor1));
+}
+
+.danger {
+    background-image: linear-gradient(var(--dangerColor1), var(--dangerColor2)) ;
+}
+
+.danger:hover {
+    background-image: linear-gradient(var(--dangerColor2), var(--dangerColor1)) ;
+}
+.icones > li {
+    list-style-type: square;
+}
+
+.icones li > ul li {
+    list-style-type: circle;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-50 {
+    width: 50%;
+}
+.center {
+    text-align: center;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.small {
+    font-size: 13px;
+    color: #808080;
+}
+
+.inline {
+    display: inline-block;
+}
+
+a > img {
+    vertical-align: bottom;
+}
+
+a:visited {
+    color: #000;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+table {
+    margin: auto;
+    border-spacing: 0px;
+    padding: 10px;
+}
+table tr:nth-child(even) {
+    background-color: var(--tr1);
+
+}
+table tr:nth-child(odd) {
+    background-color: var(--tr2);
+}
+table th {
+    background-color:  var(--th);
+    border: 2px solid #000;
+    border-right: 0px;
+    font-size: 16px;
+}
+table td {
+    text-align: center;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+td:last-child, th:last-child{
+    border-right: 2px #000 solid;
+}
+
+.excluir, .modificar, .detalhes {
+    height: 25px;
+    width: 25px;
+    border: 0px;
+    cursor: pointer;
+}
+.excluir {
+    background: url('IMAGES/delete.png');
+}
+
+.modificar {
+    background: url('IMAGES/update.png');
+}
+
+.detalhes {
+    background: url('IMAGES/detalhes.png');
+}
+footer {
+    padding-top: 10px;
+    border-top: 2px solid rgba(0, 0, 0, 0.39);
+    background-color: var(--bgFooterHeader);
+}
+
+footer {
+    padding-top: 10px;
+    border-top: 2px solid rgba(0, 0, 0, 0.39);
+    background-color: var(--bgFooterHeader);
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.referencia {
+    padding: 10px;
+    padding-left: 40px;
+}
+
+@media screen and (max-width: 450px) {
+    .btn {
+        width: 40%;
+    }
+}
