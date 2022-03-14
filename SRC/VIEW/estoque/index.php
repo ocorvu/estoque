@@ -41,7 +41,7 @@ Acesso::notLogged();
             </div>
             <div>
                 <li>
-                    <a class="link" href="../admin/painelAdmin.php"><img src="../../../public/IMAGES/admin.png" alt="icone admin">ADMIN</a></li>
+                    <a class="link" href="/"><img src="../../../public/IMAGES/admin.png" alt="icone admin">PAINEL</a></li>
             </div>
         </ul>
     </nav>

@@ -25,7 +25,6 @@ if (!empty($_POST && $_POST['logout'] == 1)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estoque - Login</title>
     <link rel="shortcut icon" href="../../../public/IMAGES/favicon.ico" type="image/x-icon">
-
     <link rel="stylesheet" href="../../../public/style.css">
 </head>
 <body>
@@ -62,26 +61,27 @@ if (!empty($_POST && $_POST['logout'] == 1)) {
                     <td><?= $coluna['nome'] ?></td>
                     <td><?= $coluna['senha'] ?></td>
                     <td>
-                    <form mehtod='GET'>
+                        <form mehtod='GET'>
                             <button 
-                                id='modificar'
+                                class='modificar'
                                 name='id'
                                 type='submit'
                                 formaction='#'
-                                value='<?= $coluna['id']; ?>' 
+                                value='<?= $coluna['id'] ?>' 
                                 title='Modificar' 
                             >
                             <button 
-                                id='excluir'
+                                class='excluir'
                                 name='id'
                                 type='submit'
                                 formaction='#' 
-                                value='<?= $coluna['id']; ?>' 
+                                value='<?= $coluna['id'] ?>' 
                                 title='Excluir' 
                             >
+                        </form>
                     </td>
                 </tr>
-            <?php } ?>
+                <?php } ?>
             </tbody>
         </table>
         <form method="POST">
@@ -90,7 +90,7 @@ if (!empty($_POST && $_POST['logout'] == 1)) {
                         class="btn inline"
                         type="submit"
                         formaction="./painelAdmin.php"
-                        value="<?php echo $_GET['id']?>"
+                        value=""
                     >
                         Voltar
                     </button>

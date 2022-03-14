@@ -19,7 +19,7 @@ class Acesso
                 $_SESSION['nivel'] = $coluna['nivel_acesso'];
                 $_SESSION['logged'] = true;
             } else {
-                echo "Erro!";
+                return false;
             }
         }
     }
@@ -28,7 +28,7 @@ class Acesso
     {
         header('location: ../../../index.php');
         $_SESSION['logged'] = false;
-        $_SESSION = array();
+        $_SESSION = [];
         session_destroy();
     }
 

@@ -156,6 +156,10 @@ input {
     margin-bottom: 10px;
 }
 
+.login {
+    color: var(--dangerColor1);
+}
+
 table {
     margin: auto;
     border-spacing: 0px;
