@@ -11,7 +11,7 @@ class Database
     public static function conection()
     {
         try {
-            $dsn = 'pgsql:host=' . $_ENV['HOST'] . ';port=' . $_ENV['PORT'] . ';dbname=' . $_ENV['DATABASE'];
+            $dsn = $_ENV['DRIVER'] . ':host=' . $_ENV['HOST'] . ';port=' . $_ENV['PORT'] . ';dbname=' . $_ENV['DATABASE'];
 
             $conn = new PDO($dsn, $_ENV['USER'], $_ENV['PASSWORD'], [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
