@@ -9,9 +9,9 @@
 #
 Os requisitos para que esse projeto funcione são:
 <ul>
-  <li>PHP ^7.4;</li>
+  <li>PHP ^8.1;</li>
   <li>Algum servidor local (recomendo Apache);</li>
-  <li>Driver PostgresSQL;</li>
+  <li>Driver PostgresSQL/MySQL;</li>
   <li>Executar o comando <strong><em>composer install</em></strong> para adquirir as dependências;</li>
 </ul>
 
