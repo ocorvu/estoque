@@ -2,6 +2,8 @@
 use ocorvu\Estoque\Controller\EstoqueController;
 use ocorvu\Estoque\Model\Acesso;
 
+
+require_once '../../functions.php';
 require_once '../../../vendor/autoload.php';
 
 session_start();
@@ -121,7 +123,7 @@ Acesso::notLogged();
             <img class="mr-5" src="../../../public/IMAGES/github.png" alt="icone github">Github
         </a>
         <a class="link" href="https://www.linkedin.com/in/joaofhdm/" target="_blanl">
-            <img class="mr-5" src="../../../public/IMAGES/linkedin.png" alt="icone linkedin">Linkedin
+            <img class="mr-5" src="<?= asset('IMAGES/linkedin.png') ?>" alt="icone linkedin">Linkedin
         </a>  
         <a class="link" href="https://twitter.com/damatajao" target="_blank">
             <img class="mr-5" src="../../../public/IMAGES/twitter.png" alt="icone twitter">Twitter
