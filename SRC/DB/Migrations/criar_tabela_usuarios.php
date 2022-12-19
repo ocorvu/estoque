@@ -2,6 +2,7 @@
 
 require_once "../../../vendor/autoload.php";
 
+use ocorvu\Estoque\Controller\UsuarioController;
 use ocorvu\Estoque\DB\Database;
 
 function criar()
@@ -16,9 +17,11 @@ function criar()
             )";
     try {
         $db->query($sql);
+        
+        echo "Tabela 'usuarios' criada com sucesso!" . PHP_EOL;
     }
     catch (\PDOException $e) {
-        echo $e->getMessage();
+        echo $e->getMessage() . PHP_EOL;
     }
 }
 
@@ -30,9 +33,23 @@ function derrubar()
         $db->query($sql);
     }
     catch (\PDOException $e) {
-        echo $e->getMessage();
+        echo $e->getMessage() . PHP_EOL;
     }
+}
+
+function userAdmin()
+{
+    $userController = new UsuarioController();
+
+    $userController->cadastrarUsuario(3, 'admin', 'admin');
+
+    foreach ($userController->usuarios() as $usuario) {
+        echo "Admin: {$usuario['nome']} - Senha: {$usuario['senha']}" . PHP_EOL;
+    }
+   
 }
 
 derrubar();
 criar();
+
+userAdmin();

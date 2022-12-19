@@ -16,9 +16,11 @@ function criar()
             )";
     try {
         $db->query($sql);
+
+        echo "Tabela 'produtos' criada com sucesso!" . PHP_EOL;
     }
     catch (\PDOException $e) {
-        echo $e->getMessage();
+        echo $e->getMessage() . PHP_EOL;
     }
 }
 
@@ -30,7 +32,7 @@ function derrubar()
         $db->query($sql);
     }
     catch (\PDOException $e) {
-        echo $e->getMessage();
+        echo $e->getMessage(). PHP_EOL;
     }
 }
 
@@ -51,3 +53,6 @@ function tabela()
         echo $coluna['column_name'] .  "-" .  $coluna['data_type'] . PHP_EOL;
     }
 }
+
+derrubar();
+criar();
