@@ -2,7 +2,6 @@
 
 use ocorvu\Estoque\Model\Acesso;
 
-require_once "../../../vendor/autoload.php";
 session_start();
 
 Acesso::notLogged();
@@ -35,7 +34,7 @@ if (!empty($_POST && $_POST['logout'] == 1)) {
     <nav class="w-100">
         <ul class="flex mb-10 w-100">
             <li>
-                <a class="link" href="./registro.php">
+                <a class="link" href="/admin/usuarios/cadastrar">
                     <img class="mr-5" src="../../../public/IMAGES/nav-cadastrar.png" alt="icone cadastro">REGISTRAR
                 </a>
             </li>
@@ -48,14 +47,14 @@ if (!empty($_POST && $_POST['logout'] == 1)) {
         <form method="POST" class="flex">
         <button 
             type="submit" 
-            formaction="../estoque/index.php"
+            formaction="/produtos"
             class="btn mr-5"
         >
             Estoque
         </button>
         <button
             type="submit"
-            formaction="./usuarios.php"
+            formaction="/admin/usuarios"
             class="btn mr-5"
         >
             Usuarios

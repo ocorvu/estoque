@@ -42,7 +42,7 @@ class Acesso
                 header("location: ./SRC/VIEW/usuario/painel.php");
                 break;
             case 3:
-                header("location: ./SRC/VIEW/admin/painelAdmin.php");
+                header("location: /admin/painel");
                 break;
             default:
                 break;

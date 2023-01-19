@@ -2,7 +2,7 @@
 
 use ocorvu\Estoque\Controller\UsuarioController;
 use ocorvu\Estoque\Model\Acesso;
-require_once "../../../vendor/autoload.php";
+
 session_start();
 
 Acesso::notLogged();
@@ -41,7 +41,7 @@ if (!empty($_GET)) {
     <nav class="w-100">
         <ul class="flex mb-10 w-100">
             <li>
-                <a class="link" href="painelAdmin.php">
+                <a class="link" href="/admin/painel">
                     <img class="mr-5" src="../../../public/IMAGES/admin.png" alt="icone cadastro">ADMIN
                 </a>
             </li>

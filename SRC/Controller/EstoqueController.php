@@ -10,6 +10,7 @@ class EstoqueController
     {
         $produtos = new Estoque();
         $busca = $produtos->mostrarProdutos($descricao, $id);
+        
         return $busca;
     }
 

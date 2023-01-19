@@ -2,10 +2,6 @@
 use ocorvu\Estoque\Controller\EstoqueController;
 use ocorvu\Estoque\Model\Acesso;
 
-
-require_once '../../functions.php';
-require_once '../../../vendor/autoload.php';
-
 session_start();
 
 Acesso::notLogged();
@@ -25,13 +21,13 @@ Acesso::notLogged();
 <body>
 <header>
     <h1 class="title mb-10 center">
-        <a class="link" href="index.php">ESTOQUE</a>
+        <a class="link" href="/produtos">ESTOQUE</a>
     </h1>
     <nav class="w-100">
         <ul class="flex mb-10 w-100">
             <div class="flex">
                 <li>
-                    <a class="link" href="cadastrar.php">
+                    <a class="link" href="/produtos/cadastrar">
                         <img class="mr-5" src="../../../public/IMAGES/nav-cadastrar.png" alt="icone cadastro">CADASTRAR
                     </a>
                 </li>
@@ -43,7 +39,7 @@ Acesso::notLogged();
             </div>
             <div>
                 <li>
-                    <a class="link" href="/"><img src="../../../public/IMAGES/admin.png" alt="icone admin">PAINEL</a></li>
+                    <a class="link" href="/admin/painel"><img src="../../../public/IMAGES/admin.png" alt="icone admin">PAINEL</a></li>
             </div>
         </ul>
     </nav>
@@ -87,7 +83,7 @@ Acesso::notLogged();
                                     class="detalhes"
                                     name='id'
                                     type='submit'
-                                    formaction='detalhes.php' 
+                                    formaction='/produtos/detalhes/<?= $coluna['id']?>' 
                                     value='<?= $coluna['id']; ?>'
                                     title='Detalhes'
                                 >
