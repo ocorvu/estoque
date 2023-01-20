@@ -63,6 +63,10 @@ input {
     flex-wrap: wrap;
 }
 
+.justify-start {
+    justify-content: start;
+}
+
 .link {
     padding: 10px;
     text-decoration: none;
@@ -129,6 +133,10 @@ input {
 
 .mb-10 {
     margin-bottom: 10px;
+}
+
+.ml-5 {
+    margin-left: 5px;
 }
 
 .mr-5 {

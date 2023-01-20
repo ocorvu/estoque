@@ -37,8 +37,9 @@ Acesso::notLogged();
 
         foreach ($produto as $linha => $coluna) {
         ?>
-            <h2 class='mb-10'>
+            <h2 class='flex justify-start mb-10'>
                 <?php echo $coluna['descricao']; ?>
+                <a href="/produtos/modificar?id=<?= $_GET['id'] ?>"><img class="ml-5" src="<?= asset('IMAGES/update.png') ?>" alt=""></a>
             </h2>
             <p>
                 <strong>Quantidade:</strong>

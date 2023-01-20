@@ -20,7 +20,7 @@ if (!empty($_POST && $_POST['logout'] == 1)) {
 <body>
 <header>
     <h1 class="title mb-10 center">
-        Painel
+        <a class="link" href="/admin/painel">Painel</a>
     </h1>
     <nav class="w-100">
         <ul class="flex mb-10 w-100">
@@ -79,7 +79,7 @@ if (!empty($_POST && $_POST['logout'] == 1)) {
                     <button
                         class="btn inline"
                         type="submit"
-                        formaction="./painelAdmin.php"
+                        formaction="/admin/painel"
                         value=""
                     >
                         Voltar

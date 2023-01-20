@@ -29,7 +29,8 @@ Acesso::notLogged();
             </div>
             <div>
                 <li>
-                    <a class="link" href="/admin/painel"><img src="<?= asset('IMAGES/admin.png"') ?> alt="icone admin">PAINEL</a></li>
+                    <a class="link" href="/admin/painel">
+                        <img src="<?= asset('IMAGES/admin.png') ?>" alt="icone admin">PAINEL</a></li>
             </div>
         </ul>
     </nav>
@@ -81,7 +82,7 @@ Acesso::notLogged();
                                     class="modificar"
                                     name='id'
                                     type='submit'
-                                    formaction='modificar.php'
+                                    formaction='/produtos/modificar'
                                     value='<?= $coluna['id']; ?>' 
                                     title='Modificar' 
                                 >

@@ -3,7 +3,6 @@
 use ocorvu\Estoque\Controller\EstoqueController;
 use ocorvu\Estoque\Model\Acesso;
 
-require_once '../../../vendor/autoload.php';
 session_start();
 
 Acesso::notLogged();
@@ -68,7 +67,7 @@ if (!empty($_POST)) {
                                 class="detalhes"
                                 name='id'
                                 type='submit'
-                                formaction='detalhes.php' 
+                                formaction='/produtos/detalhes' 
                                 value='<?= $coluna['id'] ?>'
                                 title='Detalhes'
                             >
@@ -76,7 +75,7 @@ if (!empty($_POST)) {
                                 class="modificar"
                                 name='id'
                                 type='submit'
-                                formaction='modificar.php'
+                                formaction='/produtos/modificar'
                                 value='<?= $coluna['id'] ?>' 
                                 title='Modificar' 
                             >
