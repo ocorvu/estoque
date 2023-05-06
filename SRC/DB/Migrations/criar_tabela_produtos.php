@@ -8,7 +8,7 @@ function criar()
 {
     $db = Database::conection();
     $sql = "CREATE TABLE IF NOT EXISTS produtos (
-              id SERIAL PRIMARY KEY,
+              id INTEGER PRIMARY KEY AUTOINCREMENT,
               descricao CHARACTER VARYING(30) NOT NULL UNIQUE,
               quantidade INTEGER NOT NULL,
               data_cadastro DATE NOT NULL,
