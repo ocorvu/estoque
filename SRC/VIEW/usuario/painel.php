@@ -2,7 +2,6 @@
 
 use ocorvu\Estoque\Model\Acesso;
 
-require_once "../../../vendor/autoload.php";
 session_start();
 
 Acesso::notLogged();
