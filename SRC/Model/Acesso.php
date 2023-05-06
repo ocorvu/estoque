@@ -8,7 +8,7 @@ class Acesso
     public static function login($usuario, $senha)
     {
         $usuarios = Database::conection();
-        $sql = "SELECT nivel_acesso, usuario, nome, senha FROM usuarios WHERE usuario = '$usuario'";
+        $sql = "SELECT `nivel_acesso`, `usuario`, `nome`, `senha` FROM `usuarios` WHERE usuario = '$usuario'";
 
         $busca = $usuarios->query($sql);
     

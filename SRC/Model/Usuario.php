@@ -3,6 +3,7 @@
 namespace ocorvu\Estoque\Model;
 
 use ocorvu\Estoque\DB\Database;
+
 class Usuario
 {
     public function registar($nivel_acesso, $usuarioLogin, $nome)
@@ -15,8 +16,8 @@ class Usuario
             $senha = random_int(501, 999);
         }
 
-        $sql = "INSERT INTO usuarios (id, nivel_acesso, usuario, nome, senha)
-                VALUES (default, '$nivel_acesso', '$usuarioLogin', '$nome', '$senha')";
+        $sql = "INSERT INTO usuarios (`nivel_acesso`, `usuario`, `nome`, `senha`)
+                VALUES ('$nivel_acesso', '$usuarioLogin', '$nome', '$senha')";
 
         $usuarios->query($sql);
     }
