@@ -4,6 +4,7 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 $rotas = [
     '/' => 'index.view.php',
+    '/usuario/painel' => 'SRC/VIEW/usuario/painel.php',
     '/produtos' => './SRC/VIEW/estoque/produtos.php',
     '/produtos/cadastrar' => './SRC/VIEW/estoque/cadastrar.php',
     '/produtos/detalhes' => './SRC/VIEW/estoque/detalhes.php',
