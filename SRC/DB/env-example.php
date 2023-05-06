@@ -15,7 +15,7 @@
 $_ENV['HOST'] = '';
 $_ENV['DRIVER'] = 'sqlite';
 $_ENV['DATABASE'] = 'db.sqlite3';
-$_ENV['DATABASE_PATH'] = 'SRC/DB/Migrations/db.sqlite3';
+$_ENV['DATABASE_PATH'] = 'caminho/para/o/arquivo';
 $_ENV['USER'] = '';
 $_ENV['PORT'] ='';
 $_ENV['PASSWORD'] = '';
