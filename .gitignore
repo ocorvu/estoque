@@ -2,3 +2,4 @@
 teste.php
 /SRC/DB/env.php
 debug
+/SRC/DB/Migrations/db.sqlite3
