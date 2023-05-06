@@ -9,7 +9,7 @@ function criar()
 {
     $db = Database::conection();
     $sql = "CREATE TABLE IF NOT EXISTS usuarios (
-              id SERIAL PRIMARY KEY,
+              id INTEGER PRIMARY KEY AUTOINCREMENT,
               nivel_acesso INTEGER NOT NULL,
               nome CHARACTER VARYING(8) NOT NULL,
               usuario CHARACTER VARYING(8) NOT NULL UNIQUE,
