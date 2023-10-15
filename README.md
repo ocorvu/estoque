@@ -9,15 +9,17 @@
 #
 Os requisitos para que esse projeto funcione são:
 <ul>
-  <li>PHP ^8.1;</li>
+  <li>PHP ^8.2;</li>
   <li>Algum servidor local (recomendo Apache);</li>
-  <li>Driver PostgresSQL/MySQL;</li>
+  <li>Driver SQLite/MySQL;</li>
   <li>Executar o comando <strong><em>composer install</em></strong> para adquirir as dependências;</li>
 </ul>
 
 
-<p><strong>Você pode encontrar uma versão lançada desse app nesse <a href="https://quiet-temple-28268.herokuapp.com/" target="_blank">link</a>.</strong></p>
-<p>Deixo aqui um login e senha (nivel de acesso 1) para que, caso deseje, entre no site e dê uma olhada. Login: <strong>user</strong> / Senha: <strong>434</strong>. Caso deseje ver mais do sistema, não exite em entrar em contato para ter acesso a um usuário nivel 3.</p> 
+<del>
+  <p><strong>Você pode encontrar uma versão lançada desse app nesse <a href="https://quiet-temple-28268.herokuapp.com/" target="_blank">link</a>.</strong></p>
+  <p>Deixo aqui um login e senha (nivel de acesso 1) para que, caso deseje, entre no site e dê uma olhada. Login: <strong>user</strong> / Senha: <strong>434</strong>. Caso deseje ver mais do sistema, não exite em entrar em contato para ter acesso a um usuário nivel 3.</p>
+</del>
 #
 <p>Algumas funcionalidades são:</p>
 <ul>
