@@ -16,7 +16,7 @@ class EstoqueController
 
     public function alterar(int $id, string $descricao, int $quantidade): void 
     {
-        header('location: ./index.php');
+        header('location: /produtos');
         $estoque = new Estoque();
         $estoque->modificarProduto($id, $descricao, $quantidade);
     }
@@ -29,7 +29,7 @@ class EstoqueController
 
     public function remover(int $id): void
     {
-        header('location: ./index.php');
+        header('location: /produtos');
 
         $estoque = new Estoque();
         $estoque->deletarProduto($id);
