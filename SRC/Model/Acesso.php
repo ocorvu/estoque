@@ -26,10 +26,10 @@ class Acesso
 
     public static function sair()
     {
-        header('location: ../../../index.php');
         $_SESSION['logged'] = false;
         $_SESSION = [];
         session_destroy();
+        header('location: /');
     }
 
     public static function nivel($nivelAcesso)
