@@ -57,7 +57,7 @@ Acesso::notLogged();
                     <button
                         class="btn inline"
                         type="submit"
-                        formaction="./index.php"
+                        formaction="/produtos"
                         value="<?php echo $_GET['id']?>"
                     >
                         Voltar
