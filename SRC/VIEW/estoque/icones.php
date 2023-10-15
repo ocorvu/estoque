@@ -1,7 +1,7 @@
 
 <body>
 <header>
-    <h1 class="title mb-10 center"><a class="link" href="index.php">ESTOQUE</a></h1>
+    <h1 class="title mb-10 center"><a class="link" href="/produtos">ESTOQUE</a></h1>
     <nav>
         <ul class="flex mb-10">
             <li>

@@ -41,7 +41,7 @@ Acesso::notLogged();
         <p class="mb-10">
             Digite a descrição do produto para uma busca específica:
         </p>
-        <form action="index.php" method="GET">
+        <form action="/produtos" method="GET">
         
             <input class="w-100" type="text" name='nDescricao' id="iDescricao" size="20" maxlength="30" placeholder="Descrição do produto">
         
@@ -90,7 +90,7 @@ Acesso::notLogged();
                                     class="excluir"
                                     name='id'
                                     type='submit'
-                                    formaction='excluir.php' 
+                                    formaction='/produtos/excluir' 
                                     value='<?= $coluna['id']; ?>' 
                                     title='Excluir' 
                                 >

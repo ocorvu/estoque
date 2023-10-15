@@ -3,7 +3,6 @@
 use ocorvu\Estoque\Controller\EstoqueController;
 use ocorvu\Estoque\Model\Acesso;
 
-
 session_start();
 
 Acesso::notLogged();
@@ -22,7 +21,7 @@ if (!empty($_POST)) {
     <nav class="w-100">
         <ul class="flex mb-10 w-100">
             <li>
-                <a class="link" href="cadastrar.php">
+                <a class="link" href="/produtos/cadastrar">
                     <img class="mr-5" src="<?= asset('IMAGES/nav-cadastrar.png') ?>" alt="icone cadastro">CADASTRAR
                 </a>
             </li>

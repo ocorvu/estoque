@@ -8,7 +8,7 @@ session_start();
 Acesso::notLogged();
 
 if ($_SESSION['nivel'] == 1) {
-    header("location: ./index.php");
+    header("location: /");
 }
 
 $produtos = new EstoqueController();
@@ -24,11 +24,11 @@ if (!empty($_POST)) {
 
 <body>
 <header>
-        <h1 class="title mb-10 center"><a class="link" href="index.php">ESTOQUE</a></h1>
+        <h1 class="title mb-10 center"><a class="link" href="/produtos">ESTOQUE</a></h1>
         <nav>
             <ul class="flex mb-10">
                 <li>
-                    <a class="link" href="cadastrar.php">
+                    <a class="link" href="/produtos/cadastrar">
                         <img class="mr-5" src="<?= asset('IMAGES/nav-cadastrar.png') ?>" alt="icone cadastro">CADASTRAR
                     </a>
                 </li>
@@ -83,7 +83,7 @@ if (!empty($_POST)) {
                                 class="excluir"
                                 name='id'
                                 type='submit'
-                                formaction='excluir.php' 
+                                formaction='/produtos/excluir' 
                                 value='<?= $coluna['id'] ?>' 
                                 title='Excluir' 
                             >
@@ -125,7 +125,7 @@ if (!empty($_POST)) {
                 <button
                     class="btn inline"
                     type="submit"
-                    formaction="./index.php"
+                    formaction="/produtos"
                 >
                     Voltar
                 </button>

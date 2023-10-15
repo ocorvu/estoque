@@ -12,12 +12,12 @@ Acesso::notLogged();
 <body>
 <header>
     <h1 class="title mb-10 center">
-        <a class="link" href="index.php">ESTOQUE</a>
+        <a class="link" href="/produtos">ESTOQUE</a>
     </h1>
     <nav class="w-100">
         <ul class="flex mb-10 w-100">
             <li>
-                <a class="link" href="cadastrar.php">
+                <a class="link" href="/produtos/cadastrar">
                     <img class="mr-5" src="<?= asset('IMAGES/nav-cadastrar.png') ?>" alt="icone cadastro">CADASTRAR
                 </a>
             </li>
