@@ -13,7 +13,7 @@ class Estoque
         $estoque = Database::conection();
 
         if ($descricao) {
-            $sql = "SELECT id, descricao, quantidade FROM produtos WHERE descricao ILIKE '%$descricao%'";
+            $sql = "SELECT id, descricao, quantidade FROM produtos WHERE descricao LIKE '%$descricao%'";
 
             $query = $estoque->query($sql);
             $busca = $query->fetchAll();
