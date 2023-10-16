@@ -30,11 +30,15 @@ class Estoque
  
         return $busca;
     }
-    public function cadastrarProduto(string $descricao, int $quantidade): void
+    public function cadastrarProduto(string $descricao, int $quantidade): bool
     {
         $estoque = Database::conection();
         $descricao = strtoupper($descricao);
         $data_cadastro = date('Y-m-d');
+
+        if ($this->checarSeProdutoExiste($descricao, $estoque)) {
+            return false;
+        }
 
         $sql = "INSERT INTO produtos 
                 (descricao, quantidade, data_cadastro, data_alteracao) 
@@ -49,6 +53,7 @@ class Estoque
         $query->bindValue(':data_alteracao', $data_cadastro);
 
         $query->execute();
+        return true;
     }
     public function modificarProduto(int $id, string $descricao, int $quantidade): void
     {
@@ -77,6 +82,7 @@ class Estoque
         $query->bindValue(':id', $id);
         $query->execute();
     }
+
     private function checarSeProdutoExiste($descricao, $database): bool
     {
         $sql = "SELECT id FROM produtos WHERE descricao = :descricao LIMIT 1";
