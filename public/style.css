@@ -164,8 +164,13 @@ input {
     margin-bottom: 10px;
 }
 
-.login {
+.erro {
     color: var(--dangerColor1);
+}
+
+.sucesso {
+    color: var(--th);
+    font-weight: bold;
 }
 
 table {
