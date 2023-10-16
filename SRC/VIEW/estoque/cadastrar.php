@@ -9,7 +9,7 @@ Acesso::notLogged();
 
 if (!empty($_POST)) {
     $cadastro = new EstoqueController();
-    $cadastro->cadastrar($_POST['nDescricao'], $_POST['nQuantidade']);
+    $cadastrou = $cadastro->cadastrar($_POST['nDescricao'], $_POST['nQuantidade']);
 }
 ?>
 
@@ -36,7 +36,11 @@ if (!empty($_POST)) {
 <main class="w-100">
     <h2 class="mb-10 center">Cadastre o Produto</h2>
 
-
+    <?php if ($cadastrou[0] === true) { ?>
+        <p class="sucesso center">Produto <?= $cadastrou[1] ?> cadastrado com sucesso!</p>
+    <?php }else if ($cadastrou[0] === false) { ?>
+        <p class="erro center">O Produto <?= $cadastrou[1] ?> já se encontra cadastrado!</p>
+    <?php } ?>
     <form 
         class="w-80 m-auto" 
         action="" 
