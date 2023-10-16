@@ -31,7 +31,7 @@ if (isset($_SESSION['logged']) && $_SESSION['logged']) {
     <h2 class="mb-10 center">Login</h2>
     <section>
         <?php if (!$login) { ?>
-            <p class="login center">Usuário ou senha incorretos!</p>
+            <p class="erro center">Usuário ou senha incorretos!</p>
         <?php } ?>
         <form class="w-80 m-auto" action="" method="POST">
             <label for="iUsuario">Usuário</label>
