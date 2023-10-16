@@ -21,10 +21,12 @@ class EstoqueController
         $estoque->modificarProduto($id, $descricao, $quantidade);
     }
 
-    public function cadastrar(string $descricao, int $quantidade): void
+    public function cadastrar(string $descricao, int $quantidade)
     {
         $estoque = new Estoque();
-        $estoque->cadastrarProduto($descricao, $quantidade);
+        $cadastro = $estoque->cadastrarProduto($descricao, $quantidade);
+        
+        return [$cadastro, strtoupper($descricao)];
     }
 
     public function remover(int $id): void
