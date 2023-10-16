@@ -77,5 +77,18 @@ class Estoque
         $query->bindValue(':id', $id);
         $query->execute();
     }
+    private function checarSeProdutoExiste($descricao, $database): bool
+    {
+        $sql = "SELECT id FROM produtos WHERE descricao = :descricao LIMIT 1";
+
+        $query = $database->prepare($sql);
+
+        $query->bindValue(':descricao', $descricao);
+        $query->execute();
+
+        $found = $query->fetch();
+       
+        return (bool)$found;
+    }
 }
 
